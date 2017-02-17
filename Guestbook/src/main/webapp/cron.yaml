@@ -1,0 +1,4 @@
+cron:
+- description: Send email to me
+  url: /cronlogServlet
+  schedule: every 2 minutes
