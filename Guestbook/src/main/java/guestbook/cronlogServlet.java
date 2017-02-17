@@ -18,7 +18,7 @@ public class cronlogServlet extends HttpServlet{
     Email to = new Email("test@example.com");
     Content content = new Content("text/plain", "and easy to do anywhere, even with Java");
     Mail mail = new Mail(from, subject, to, content);
-    SendGrid sg = new SendGrid(System.getenv("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"));
+    SendGrid sg = new SendGrid(System.getenv("API_KEY"));
     Request request = new Request();
       request.method = Method.POST;
       request.endpoint = "mail/send";
